@@ -1,0 +1,230 @@
+
+/* основой текст #757575; */
+/* вторичный , заголовки #212121; */
+/* цвет  белый  #FFFFFF */
+/* голубой цвет #2196F3 */
+/* background hero #2F303A */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root{
+    --primery-color:#757575;
+    --secondary-text:#212121;
+    --blue-color:#2196F3;
+    --white-color:#ffffff; 
+    --background:#2F303A ;
+
+}h1, h2, h3,
+ul{margin: 0 0;}
+body{
+    
+    color: var(--primery-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    
+} 
+/* header   */
+.page-header
+{
+    max-width: 1600px;
+}
+.container
+{ outline: 3px solid black;
+  width: 1200px;
+  display: flex;
+  padding: 0 15px;
+  margin: 0 200px;
+    
+    }
+
+
+.header-logo{
+    padding: 24px 0px 25px 0px ;
+    color: var(--blue-color);
+    font-family: raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    
+}
+.logo-header-studio{
+    color: var(--secondary-text);
+}
+/* nav list */
+.list{
+    display: flex;
+    list-style: none;
+    
+}
+.link{ text-decoration: none;
+    
+}
+.nav-container
+{
+    display: flex;
+}
+.navlist-container{
+    display: flex;
+    padding: 32px 0px 32px 93px;
+}
+.contact-item:not(:first-child), .navlist-item:not(:first-child){
+    padding-left: 50px;
+}
+
+.nav-link{
+    color: var(--secondary-text);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+}
+.nav-link:focus, 
+.nav-link:hover{
+      color: var(--blue-color);
+    }
+.contact-container
+{ padding: 32px 0px 32px 331px;}
+.contact-link{
+   
+    color: var(--primery-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    }
+.contact-link:focus,
+.contact-link:hover{
+    color: var(--blue-color);
+}
+/* main */
+.hero{
+    display: inline-block;
+    text-align: center;
+    padding-bottom : 200px;
+    width: 1600px;
+    background-color:var(--background);
+}
+.hero-title{
+    padding:200px 0 30px 0;
+    text-align: center;
+    color:var(--white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.hero-button{
+    display: inline-block;
+    min-width:200px;
+    padding: 10px 32px;
+    height: 50px;
+    background-color: var(--blue-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color:var(--white-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    text-align: center;
+}
+/* наши преимущества */
+.hidden-title{
+    display: none;
+    
+}
+.section-title{
+color: var(--secondary-text);
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+letter-spacing: 0.03em;
+}
+.advantages-container{}
+/* 
+.advantages-item{
+outline: 3px solid black;
+} */
+
+.advantages-title{
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--secondary-text);
+}
+.advantages-p{
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color:var(--primery-color);
+}
+.team-title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.26;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text);
+}
+.team-p{
+
+font-weight: 400;
+font-size: 16px;
+line-height: 1.18;
+text-align: center;
+letter-spacing: 0.03em;
+}
+/* footer */
+.footer{
+    background-color: var(--background);
+}
+.footer-logo{
+    color: var(--white-color);
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 31px;
+letter-spacing: 0.03em;
+}
+.footer-logo-web{
+    color: var(--blue-color);
+}
+.footer-map{
+color:var(--white-color);
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+
+letter-spacing: 0.03em;
+
+
+}
+.footer-contact{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+ color: rgba(255, 255, 255, 0.6);
+}
+
+/* -----portfolio page ------*/
+.filter-button:hover,
+.filter-button:focus{
+background-color: var(--blue-color);
+color: var(--white-color);
+}
