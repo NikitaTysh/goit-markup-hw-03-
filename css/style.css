@@ -26,12 +26,15 @@ img{display: block;}
     margin-top: 30px;
     margin-left: 30px;
 }
+
 .card-set-list{
     display: flex;
     flex-wrap: wrap;
     margin-top: -30px;
     margin-left: -30px;
-
+}
+.section{
+    padding: 94px 0;
 }
 .list{
     list-style: none;
@@ -39,20 +42,21 @@ img{display: block;}
 .link{
      text-decoration: none;
 }
+.container{
+    width: 1200px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header-container{
+      display: flex;
+  }
+  
 body{
     color: var(--primery-color);
     font-family: 'Roboto';
     font-style: normal; 
 } 
-.container{
-  width: 1200px;
-  padding: 0 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.header-container{
-    display: flex;
-}
 
 /*------- header --------  */
 .page-header
@@ -323,7 +327,9 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 }
-
+.current{
+    color: var(--blue-color);
+}
 
 /* -----portfolio page ------*/
 .filter-button:hover,
@@ -331,9 +337,7 @@ color: rgba(255, 255, 255, 0.6);
 background-color: var(--blue-color);
 color: var(--white-color);
 }
-.section{
-    padding: 94px 0;
-}
+
 .button-list{
     display: flex;
     justify-content: center;
