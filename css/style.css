@@ -146,6 +146,7 @@ body{
     text-transform: uppercase;
 }
 .hero-button{
+    cursor: pointer;
     display: inline-block;
     min-width:200px;
     padding: 10px 32px;
@@ -344,6 +345,7 @@ color: var(--white-color);
     margin-bottom: 50px;
 }
 .filter-button{
+    cursor: pointer;
     padding: 6px 22px;
     background: #F5F4FA;
     border-radius: 4px;
