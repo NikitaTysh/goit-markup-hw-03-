@@ -1,9 +1,9 @@
-
 /* основой текст #757575; */
 /* вторичный , заголовки #212121; */
 /* цвет  белый  #FFFFFF */
 /* голубой цвет #2196F3 */
 /* background hero #2F303A */
+/* bg #F5F4FA */
 *,
 *::before,
 *::after {
@@ -15,7 +15,9 @@
     --blue-color:#2196F3;
     --white-color:#ffffff; 
     --background:#2F303A ;
-
+    --bg:#F5F4FA;
+    --icon-fill:#AFB1B8;
+    --work-item-border:#eeeeee
 }
 h1, h2, h3, ul, p{
      margin: 0;
@@ -133,7 +135,6 @@ body{
     display: inline-block;
     text-align: center;
     padding-bottom : 200px;
-    width: 100%;
     margin-right: auto;
     margin-left: auto;
     background-color:var(--background);
@@ -218,14 +219,14 @@ body{
 }
 .works-item-description{
     padding: 20px 24px;
-    border: 1px solid #eeeeee; 
+    border: 1px solid var(--work-item-border); 
 }
 .works-title{
     font-weight: 700;
     font-size: 18px;
     line-height: calc(36 / 18);
     letter-spacing: 0.06em;
-    color: #212121;
+    color: var(--secondary-text);
 }
 .works-p{
     font-weight: 400;
@@ -242,13 +243,13 @@ body{
 /* -------team-------- */
 .team-section{
 
-    background: #F5F4FA;
+    background: var(--bg);
 
 }
 .team-item{
     padding-bottom: 30px;
     flex-basis: calc(100% / 4 - 30px);  
-    background: #FFFFFF;
+    background: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -335,7 +336,7 @@ color: var(--white-color);
 .filter-button{
     cursor: pointer;
     padding: 6px 22px;
-    background: #F5F4FA;
+    background: var(--bg);
     border-radius: 4px;
     color: var(--secondary-text);
     font-weight: 500;
