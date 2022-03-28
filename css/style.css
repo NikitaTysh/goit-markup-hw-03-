@@ -55,8 +55,12 @@ img{display: block;}
 body{
     color: var(--primery-color);
     font-family: 'Roboto';
-    font-style: normal; 
+    letter-spacing: 0.03em;
+    font-size: 14px;
 } 
+.current{
+    color:var(--blue-color);
+}
 
 /*------- header --------  */
 .page-header
@@ -71,8 +75,8 @@ body{
     font-family: raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+    line-height: calc(36 / 26);
+    
     
 }
 .logo-header-studio{
@@ -96,8 +100,8 @@ body{
 .nav-link{
     color: var(--secondary-text);
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    
+    line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     cursor: pointer;
     padding-top: 30px;
@@ -116,7 +120,6 @@ body{
 .contact-link{
     color: var(--primery-color);
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     padding: 30px 0;
