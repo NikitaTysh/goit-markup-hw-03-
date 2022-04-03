@@ -31,15 +31,15 @@ img{
     height: auto;
     }
 .card-set-item{
-    margin-top: 30px;
+    
     margin-left: 30px;
 }
 
 .card-set-list{
     display: flex;
     flex-wrap: wrap;
-    margin-top: -30px;
     margin-left: -30px;
+    
 }
 .section{
     padding: 94px 0;
@@ -318,8 +318,9 @@ body{
 .footer-logo-web{
     color: var(--blue-color);
 }
-.footer-list:nth-last-child()
+.footer-item:not(:last-child)
 {
+
 margin-bottom: 9px;
 }
 .footer-map{
@@ -350,6 +351,8 @@ color: rgba(255, 255, 255, 0.6);
 }
 
 /* -----portfolio page ------*/
+
+
 .filter-button:hover,
 .filter-button:focus{
 background-color: var(--blue-color);
