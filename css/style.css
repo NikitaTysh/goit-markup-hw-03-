@@ -4,6 +4,7 @@
 /* голубой цвет #2196F3 */
 /* background hero #2F303A */
 /* bg #F5F4FA */
+/* header border  #ECECEC; */
 *,
 *::before,
 *::after {
@@ -17,13 +18,18 @@
     --background:#2F303A ;
     --bg:#F5F4FA;
     --icon-fill:#AFB1B8;
-    --work-item-border:#eeeeee
+    --work-item-border:#eeeeee;
+    --border-bottom: #ECECEC;
 }
 h1, h2, h3, ul, p{
      margin: 0;
      padding: 0;
     }
-img{display: block;}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    }
 .card-set-item{
     margin-top: 30px;
     margin-left: 30px;
@@ -52,6 +58,7 @@ img{display: block;}
   }
   .header-container{
       display: flex;
+      
   }
   
 body{
@@ -68,6 +75,8 @@ body{
 .page-header
 {
     display: flex;
+    border-bottom: 1px solid var( --border-bottom);
+    
 }
 
 
@@ -130,29 +139,38 @@ body{
 .contact-link:hover{
     color: var(--blue-color);
 }
+/* 
+ */
 /* --------main-------- */
+/* 
+ */
 .hero{
-    background-color: var(--background);
+    display: block;
     max-width: 1600px;
     height: 600px;
-    display: block;
-    text-align: center;
+
+    padding-top: 200px;
     padding-bottom : 200px;
     margin-right: auto;
     margin-left: auto;
- 
+    
+
+    background-color: var(--background);
+    text-align: center;
+    
 }
 .hero-title{
-    padding:200px 0 30px 0;
     text-align: center;
     color:var(--white-color);
     font-weight: 900;
+  
     font-size: 44px;
     line-height: calc(60 / 44);
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 .hero-button{
+    margin-top : 30px;
     cursor: pointer;
     display: inline-block;
     min-width:200px;
@@ -165,8 +183,8 @@ body{
     letter-spacing: 0.06em;
     color:var(--white-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
     text-align: center;
+    border: none;
 }
 /*-------- наши преимущества --------*/
 .hidden-title{
@@ -211,18 +229,18 @@ body{
 .ourworks-list{
     display: flex;
     flex-wrap: wrap;
-    margin-top: -30px;
     margin-left: -30px;
 
 }
 .ourworks-item{
-  margin-top: 30px;
   margin-left: 30px;
   flex-basis: calc(100% / 3 - 30px);
 }
 .works-item-description{
     padding: 20px 24px;
-    border: 1px solid var(--work-item-border); 
+    border-bottom: 1px solid var(--work-item-border); 
+    border-left: 1px solid var(--work-item-border); 
+    border-right: 1px solid var(--work-item-border); 
 }
 .works-title{
     font-weight: 700;
@@ -238,7 +256,9 @@ body{
 }
     
 /*---------- we do----- */
-
+.we-do-section{
+    padding-top: 0 ;
+}
 .we-do-item{
    
     flex-basis: calc(100% / 3 - 30px);
@@ -250,14 +270,17 @@ body{
 
 }
 .team-item{
-    padding-bottom: 30px;
+
     flex-basis: calc(100% / 4 - 30px);  
     background: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
+.team-img{
+    margin-bottom: 30px;
+}
 .team-title{
-    margin-top: 30px;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: calc(19 / 16);
@@ -265,7 +288,7 @@ body{
     color: var(--secondary-text);
 }
 .team-p{
-    margin-top: 10px;
+    margin-bottom: 30px;
     font-weight: 400;
     font-size: 16px;
     line-height: calc(19 / 16);
@@ -300,6 +323,7 @@ body{
 margin-bottom: 9px;
 }
 .footer-map{
+    font-style: normal;
     color:var(--white-color);
     font-weight: 400;
     font-size: 14px;
@@ -315,6 +339,7 @@ color: var(--white-color);}
   
 .footer-contact{
 display: block;
+font-style: normal;
 font-weight: 400;
 font-size: 14px;
 line-height: calc(24 / 14);
@@ -345,6 +370,7 @@ color: var(--white-color);
     font-weight: 500;
     font-size: 16px;
     text-align: center;
+    line-height:26px;
 }
 .button-item:not(:last-child)
 {
