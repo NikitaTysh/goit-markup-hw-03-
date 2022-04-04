@@ -168,12 +168,14 @@ body{
     line-height: calc(60 / 44);
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
 .hero-button{
-    margin-top : 30px;
+    
+    border:none;
     cursor: pointer;
     display: inline-block;
-    min-width:200px;
+    min-width: 200px;
     padding: 10px 32px;
     height: 50px;
     background-color: var(--blue-color);
@@ -181,10 +183,9 @@ body{
     font-size: 16px;
     line-height: calc(30 / 16);
     letter-spacing: 0.06em;
-    color:var(--white-color);
+    color: var(--white-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     text-align: center;
-    border: none;
 }
 /*-------- наши преимущества --------*/
 .hidden-title{
